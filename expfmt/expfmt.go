@@ -50,6 +50,16 @@ const (
 	fmtProtoCompact      Format = protoFmt + ` encoding=compact-text`
 	fmtOpenMetrics_1_0_0 Format = OpenMetricsType + `; version=` + OpenMetricsVersion_1_0_0 + `; charset=utf-8`
 	fmtOpenMetrics_0_0_1 Format = OpenMetricsType + `; version=` + OpenMetricsVersion_0_0_1 + `; charset=utf-8`
+
+	// Temporarily re-export these for compatibility
+	ProtoFmt             = protoFmt
+	FmtUnknown           = fmtUnknown
+	FmtText              = fmtText
+	FmtProtoDelim        = fmtProtoDelim
+	FmtProtoText         = fmtProtoText
+	FmtProtoCompact      = fmtProtoCompact
+	FmtOpenMetrics_1_0_0 = fmtOpenMetrics_1_0_0
+	FmtOpenMetrics_0_0_1 = fmtOpenMetrics_0_0_1
 )
 
 const (
